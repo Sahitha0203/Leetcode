@@ -1,0 +1,15 @@
+var isPalindrome = function(x) {
+    let num1=x.toString();
+    let p1=0;
+    let p2=num1.length-1;
+    while(p1<p2){
+        if(num1.charAt(p1)!=num1.charAt(p2)){
+            return false;
+        }
+        p1++;
+        p2--;
+    }
+    return true;
+    
+    
+};
